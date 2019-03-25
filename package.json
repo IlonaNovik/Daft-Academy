@@ -1,0 +1,29 @@
+{
+  "name": "daft-academy",
+  "version": "1.0.0",
+  "description": "Daft Academy Excercise",
+  "main": "./js/main.js",
+  "scripts": {
+    "test": "echo test",
+    "dev": "webpack --confirg webpack.config.js --mode development",
+    "live": "webpack-dev-server --inline --hot --config webpack.js mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlonaNovik/Daft-Academy.git"
+  },
+  "author": "Ilona Novik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlonaNovik/Daft-Academy/issues"
+  },
+  "homepage": "https://github.com/IlonaNovik/Daft-Academy#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {}
+}
