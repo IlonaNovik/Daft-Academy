@@ -1,0 +1,116 @@
+$primary: #303d56;
+$background: #EDF7F6;
+$nav-color: #a4bfba;
+$gallery-color_hover: #fee1b5;
+
+$logo-font: 'Sofia', cursive;
+$nav-font: 'Open Sans', sans-serif;
+$drinks-manu-font: 'Paytone One', sans-serif;
+
+.main-section {
+    font-family: $drinks-manu-font;
+    background-color: $background;
+    margin:  80px;
+
+    .logo{
+        font-family: $logo-font;
+        color: $primary;
+        font-size: 28px;
+        border: 3px solid $primary;
+        padding: 17px 40px;
+        position: relative;
+        left: 60px;
+        top: -15px;
+    }
+
+    .menu {
+
+        width: 1200px;
+        margin: 0 auto;
+        height: 152px;
+
+        .menu-drinks {
+            padding: 80px 26px 20px 107px;
+
+            li{
+                font-family: $nav-font;
+                font-size: 17px;
+                font-weight: 400;
+                display: inline-block;
+                margin: 10px 45px 10px 0;
+                color: $nav-color;
+                cursor: pointer;
+
+                &:hover{
+                    color: $primary;
+
+                    &:after{
+                        content: "";
+                        display: block;
+                        /* margin: 0 auto; */
+                        width: 70%;
+                        padding-top: 7px;
+                        border-bottom: 1.5px solid $primary;
+                    }
+                }
+
+                
+            }
+            
+        }
+    }
+
+    .gallery {
+        height: 820px;
+
+        .gallery-images{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 1000px;
+            margin: 0 auto;   
+            
+
+            .gallery-images-item{
+                margin: 10px 10px 24px 10px;
+                height: 300px;
+                width: 300px;
+                text-align: center;
+
+                span{
+                    font-size: 38px;
+                    font-weight: 400;
+                    color: white;
+                    position: relative;
+                    bottom: 175px;
+                    left: 0;
+                }
+
+                &:nth-of-type(4){
+
+                span{
+                    bottom: 233px;
+                    line-height: 79px;
+                }
+                    
+                }
+                    
+                img{
+                    height: 300px;
+                    width: 300px;
+                        
+                    &:hover{
+                        border: 7px solid $gallery-color_hover;
+                    }
+                }
+            }
+
+            
+            
+                
+                
+                
+        }
+            
+     } 
+}

@@ -1,5 +1,6 @@
+var path = require("path");
 
-var path = require("path");module.exports = {    
+module.exports = {    
     entry: ["./js/main.js"],    
     output: {        
         filename: "out.js",        
@@ -15,5 +16,20 @@ var path = require("path");module.exports = {
                     presets: ['es2015']                
                 }            
             }        
-        }]    
-    }};
+        },
+        {
+            test: /\.s(a|c)ss$/,
+            use: [
+              {
+                loader: "style-loader" // creates style nodes from JS strings
+              },
+              {
+                loader: "css-loader" // translates CSS into CommonJS
+              },
+              {
+                loader: "sass-loader" // compiles Sass to CSS
+              }
+            ]
+          }]    
+    }
+};
