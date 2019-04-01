@@ -1,0 +1,17 @@
+@mixin custom-scroll-bar() {
+    &::-webkit-scrollbar {
+      border-radius: 10px;
+      height: 20px;
+      width: 3px;
+      
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: lighten( $nav-color, 15%);
+      border-radius: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+  }

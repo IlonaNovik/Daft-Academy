@@ -1,5 +1,5 @@
-import './reset.scss';
-import './main.scss';
+import './style/reset.scss';
+import './style/main.scss';
 
 // const { body } = document;
 // const div = document.createElement('div');

@@ -1,13 +1,5 @@
-$primary: #303d56;
-$background: #EDF7F6;
-$nav-color: #a4bfba;
-$gallery-color_hover: #fee1b5;
-
-$logo-font: 'Sofia', cursive;
-$nav-font: 'Open Sans', sans-serif;
-$drinks-manu-font: 'Paytone One', sans-serif;
-
 .main-section {
+
     font-family: $drinks-manu-font;
     background-color: $background;
     margin:  80px;
@@ -23,8 +15,11 @@ $drinks-manu-font: 'Paytone One', sans-serif;
         top: -15px;
     }
 
-    .menu {
+    .container{
+        padding-bottom: 80px;
+    }
 
+    .menu {
         width: 1200px;
         margin: 0 auto;
         height: 152px;
@@ -32,7 +27,7 @@ $drinks-manu-font: 'Paytone One', sans-serif;
         .menu-drinks {
             padding: 80px 26px 20px 107px;
 
-            li{
+            .menu-drinks-item{
                 font-family: $nav-font;
                 font-size: 17px;
                 font-weight: 400;
@@ -61,23 +56,26 @@ $drinks-manu-font: 'Paytone One', sans-serif;
     }
 
     .gallery {
+        margin: 0 160px;
         height: 820px;
+        overflow: auto;
+        @include custom-scroll-bar;
+        
 
         .gallery-images{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             width: 1000px;
-            margin: 0 auto;   
-            
+            margin: 0 auto;         
 
             .gallery-images-item{
-                margin: 10px 10px 24px 10px;
+                margin: 0 10px 24px 10px;
                 height: 300px;
                 width: 300px;
                 text-align: center;
 
-                span{
+                .gallery-drinks_name{
                     font-size: 38px;
                     font-weight: 400;
                     color: white;
@@ -88,7 +86,7 @@ $drinks-manu-font: 'Paytone One', sans-serif;
 
                 &:nth-of-type(4){
 
-                span{
+                .gallery-drinks_name{
                     bottom: 233px;
                     line-height: 79px;
                 }
@@ -104,13 +102,6 @@ $drinks-manu-font: 'Paytone One', sans-serif;
                     }
                 }
             }
-
-            
-            
-                
-                
-                
-        }
-            
+        }    
      } 
 }
