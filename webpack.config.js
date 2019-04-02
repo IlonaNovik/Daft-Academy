@@ -4,7 +4,7 @@ module.exports = {
     entry: ["./js/main.js"],    
     output: {        
         filename: "out.js",        
-        path: path.resolve(__dirname,"dist"),    
+        path: path.resolve(__dirname,"docs"),    
     },    watch: true,    
     module: {        
         rules: [{            
